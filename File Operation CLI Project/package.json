@@ -1,0 +1,12 @@
+{
+  "name": "file-operation-cli-project",
+  "version": "1.0.0",
+  "description": "It is a project to perform operations on the upload file",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
