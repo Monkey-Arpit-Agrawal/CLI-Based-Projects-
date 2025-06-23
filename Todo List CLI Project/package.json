@@ -1,0 +1,15 @@
+{
+  "name": "todo-list-cli-project",
+  "version": "1.0.0",
+  "description": "Todo CLI is a Command Line Interface (CLI) application that helps you organize, manage, prioritize, and track tasks using a todo list. It provides a simple and efficient way to manage your tasks directly from the command line.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^14.0.0"
+  }
+}
