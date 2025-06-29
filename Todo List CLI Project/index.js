@@ -1,6 +1,7 @@
 const fs = require('fs') ;
 
 const { Command } = require('commander') ;
+const { ifError } = require('assert');
 const program = new Command() ;
 
 program
@@ -63,3 +64,26 @@ program
             }
         })
     }) ;
+
+program
+    .command('update')
+    .description('It is used to update the todo ')
+    .argument('<Id>' , 'Todo Id that is to be updated')
+    .option('-t , --todo <todo>' , 'Todo to be updated')
+    .option('-p , --priority <level>' , 'Todo New Priority' )
+    .option('-g , --group <group> ' , 'Todo New Group')
+    .action((Id , option) => {
+        fs.readFile('./todos.json' , 'utf-8' , (err , result) => {
+            if (err) {
+                console.log(`Error Occurred . Error : ${err}`) ;
+            } else {
+                let todoArray = parseTodo(result) ;
+
+                if (todoArray.length == 0) {
+                    console.log('Todo Array is empty') ;
+                } else {
+                    
+                }
+            }
+        })
+    })
